@@ -1,0 +1,16 @@
+# Core NLP
+transformers>=4.40.0
+sentence-transformers>=2.6.0
+accelerate>=0.27.0  # For distributed inference
+bitsandbytes>=0.43.0  # 4-bit quantization (critical for GPU memory)
+
+# Vector DB (FAISS for local, Chroma for simpler API)
+faiss-cpu>=1.8.0  # Use faiss-gpu if CUDA available
+# chromadb>=0.4.0  # Alternative to FAISS (uncomment if preferred)
+
+# Optional but useful
+python-dotenv>=1.0.0  # For managing API keys/secrets
+langchain>=0.1.0  # Simplify RAG pipeline (optional for v0.1)
+
+# Dev/testing
+pytest>=7.4.0  # Basic testing
