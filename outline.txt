@@ -1,0 +1,6 @@
+1. Upload PDF resume
+2. Extract + chunk text (pdfplumber + regex or spacy) 
+3. (Optionally) Run initial metadata extraction
+4. Embed each chunk with LangChain + HuggingFaceEmbeddings
+5. Store in vector DB (e.g., FAISS)
+6. At query time, use LangChain:
