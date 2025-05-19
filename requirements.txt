@@ -1,18 +1,24 @@
 # Core NLP
 transformers>=4.40.0
 sentence-transformers>=2.6.0
-accelerate>=0.27.0  # For distributed inference
-bitsandbytes>=0.43.0  # 4-bit quantization (critical for GPU memory)
+accelerate>=0.27.0
+bitsandbytes>=0.43.0  # 4-bit quantization
 
-# Vector DB (FAISS for local, Chroma for simpler API)
-faiss-cpu>=1.8.0  # Use faiss-gpu if CUDA available
-# chromadb>=0.4.0  # Alternative to FAISS (uncomment if preferred)
+# Vector DB (Chroma)
+chromadb>=0.4.0  # Now using Chroma as primary
+langchain>=0.1.0  # Full package (includes community modules)
 
-# Optional but useful
-python-dotenv>=1.0.0  # For managing API keys/secrets
-langchain>=0.1.0  # Simplify RAG pipeline (optional for v0.1)
+# PDF Processing
+pypdf>=3.0.0  # Basic PDF text extraction
+unstructured>=0.10.0  # Advanced PDF/HTML parsing (optional)
 
-# Dev/testing
-pytest>=7.4.0  # Basic testing
+# Utilities
+python-dotenv>=1.0.0  # API keys/secrets
+huggingface_hub>=0.20.0  # Required for HF models
 
-pdfplumber # was good for init but not used 
+# Testing
+pytest>=7.4.0
+
+# For Streamlit frontend
+streamlit>=1.28.0
+streamlit-chat>=0.1.0  # For chat UI
