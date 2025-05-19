@@ -15,4 +15,4 @@ langchain>=0.1.0  # Simplify RAG pipeline (optional for v0.1)
 # Dev/testing
 pytest>=7.4.0  # Basic testing
 
-pdfplumber
+pdfplumber # was good for init but not used 
