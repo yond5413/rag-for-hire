@@ -7,6 +7,7 @@ bitsandbytes>=0.43.0  # 4-bit quantization
 # Vector DB (Chroma)
 chromadb>=0.4.0  # Now using Chroma as primary
 langchain>=0.1.0  # Full package (includes community modules)
+langchain-community>=0.1.0  # Community modules for Chroma
 
 # PDF Processing
 pypdf>=3.0.0  # Basic PDF text extraction
